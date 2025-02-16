@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BBA7B16F2D61538F00D41601 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BBA7B16E2D61538F00D41601 /* LICENSE */; };
+		BBA7B1762D6155F000D41601 /* GiphyUISDK in Frameworks */ = {isa = PBXBuildFile; productRef = BBA7B1752D6155F000D41601 /* GiphyUISDK */; };
+		BBA7B17B2D615BB600D41601 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BBA7B17A2D615BB600D41601 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		BBA7B1552D6144A000D41601 /* Nestatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nestatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA7B16D2D61537100D41601 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBA7B16E2D61538F00D41601 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BBA7B1702D61539800D41601 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BBA7B17C2D615ECF00D41601 /* Nestatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Nestatic.app; path = "/Users/jaroshevskii/Developer/Nestatic/build/Debug-iphoneos/Nestatic.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,6 +38,11 @@
 			path = Nestatic;
 			sourceTree = "<group>";
 		};
+		BBA7B1712D61542900D41601 /* Config */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA7B1762D6155F000D41601 /* GiphyUISDK in Frameworks */,
+				BBA7B17B2D615BB600D41601 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,17 +61,12 @@
 		BBA7B14C2D6144A000D41601 = {
 			isa = PBXGroup;
 			children = (
+				BBA7B1712D61542900D41601 /* Config */,
 				BBA7B1572D6144A000D41601 /* Nestatic */,
-				BBA7B1562D6144A000D41601 /* Products */,
+				BBA7B16D2D61537100D41601 /* README.md */,
+				BBA7B16E2D61538F00D41601 /* LICENSE */,
+				BBA7B1702D61539800D41601 /* .gitignore */,
 			);
-			sourceTree = "<group>";
-		};
-		BBA7B1562D6144A000D41601 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BBA7B1552D6144A000D41601 /* Nestatic.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,12 +86,15 @@
 			);
 			fileSystemSynchronizedGroups = (
 				BBA7B1572D6144A000D41601 /* Nestatic */,
+				BBA7B1712D61542900D41601 /* Config */,
 			);
 			name = Nestatic;
 			packageProductDependencies = (
+				BBA7B1752D6155F000D41601 /* GiphyUISDK */,
+				BBA7B17A2D615BB600D41601 /* SnapKit */,
 			);
 			productName = Nestatic;
-			productReference = BBA7B1552D6144A000D41601 /* Nestatic.app */;
+			productReference = BBA7B17C2D615ECF00D41601 /* Nestatic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,8 +121,12 @@
 			);
 			mainGroup = BBA7B14C2D6144A000D41601;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BBA7B1742D6155F000D41601 /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */,
+				BBA7B1792D615BB600D41601 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = BBA7B1562D6144A000D41601 /* Products */;
+			productRefGroup = BBA7B14C2D6144A000D41601;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -122,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA7B16F2D61538F00D41601 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +169,6 @@
 				INFOPLIST_FILE = Nestatic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -178,7 +196,6 @@
 				INFOPLIST_FILE = Nestatic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +352,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBA7B1742D6155F000D41601 /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Giphy/giphy-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.14;
+			};
+		};
+		BBA7B1792D615BB600D41601 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBA7B1752D6155F000D41601 /* GiphyUISDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBA7B1742D6155F000D41601 /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */;
+			productName = GiphyUISDK;
+		};
+		BBA7B17A2D615BB600D41601 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBA7B1792D615BB600D41601 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBA7B14D2D6144A000D41601 /* Project object */;
 }
